@@ -1,6 +1,4 @@
 # Netflix
-- Create React App
-- Configured Tailwind
 
 # Features
 - /In/ page (without login)
@@ -22,3 +20,9 @@
 - Additional
     - Search bar
     - Movie suggestions
+    - Header
+    - Routing
+    - Login Form
+    - Sign Up Form
+    - Form Vaildaation
+    - UseRef
