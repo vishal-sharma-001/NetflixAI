@@ -1,11 +1,25 @@
 import React from 'react'
-import {BG_IMG} from "../utils/config"
-
+import {useNowPlayingMovies, usePopularMovies, useTopRatedMovies, useUpcomingMovies} from '../hooks/moviesHooks'
+import MainContainer from './MainContainer'
+import CarouselContainer from "./CarouselContainer"
+import AiSearch from './AiSearch'
+import {useSelector } from 'react-redux'
 const Browse = () => {
+  
+  const showAiSearch = useSelector((store)=>store.aiResults.showAiSearch)
+  useNowPlayingMovies()
+  usePopularMovies()
+  useTopRatedMovies()
+  useUpcomingMovies()
   return (
-    <div>
-      <img className=" min-h-screen min-w-screen object-cover" src={BG_IMG} alt='netflix-bg' />
-    </div>
+    <>
+      {  showAiSearch ?  <AiSearch/> :
+        <div className='bg-black overflow-hidden'>
+          <MainContainer/>
+          <CarouselContainer/>
+        </div>
+      }
+    </>
   )
 }
 

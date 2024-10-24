@@ -52,8 +52,9 @@ const Login = () => {
 
   return (
     <div className='flex justify-center'>
-      <img className=" min-h-screen min-w-screen object-cover" src={BG_IMG} alt='netflix-bg' />
-      <form className='absolute min-w-96 top-20 w-1/4 h-4/5  bg-black bg-opacity-85 flex flex-col p-20 text-center' onSubmit={(e)=> e.preventDefault()}>
+      <img className="object-cover fixed h-screen w-screen z-0" src={BG_IMG} alt='netflix-bg' />
+      <form className='absolute top-20  w-screen md:w-1/2 lg:w-1/4 h-auto  bg-black bg-opacity-85 flex flex-col p-10 md:p-20 text-center' onSubmit={(e)=> e.preventDefault()}>
+          
           <label className='text-white font-extrabold text-2xl flex'>{signUp ? "Sign Up" : "Sign In"}</label>
           {signUp ? <input className='my-5 rounded-md h-12 bg-black bg-opacity-0 border-2 border-[rgb(58,57,55)]  text-white outline-none focus:border-white placeholder-gray-300 p-3' placeholder="Full Name" type="text" ref={fullname}/> : <></>}
           <input className='my-5 rounded-md h-12 bg-black bg-opacity-0 border-2 border-[rgb(58,57,55)]  text-white outline-none  focus:border-white placeholder-gray-300 p-3'  placeholder="Email or mobile number" type="text" ref={email} />
