@@ -24,11 +24,11 @@ const Header = () => {
 
 
   return (
-    <div className="absolute z-10 w-full py-2 bg-gradient-to-b from-black flex flex-col md:flex-row justify-between items-center">
-        <img className="w-52 h-auto min-w-52" src={LOGO} alt='netflix-logo' />
+    <div className="absolute z-30 w-full py-2 bg-gradient-to-b from-black flex flex-col md:flex-row justify-between items-center">
+        <img className="w-32 sm:w-52 h-auto" src={LOGO} alt='netflix-logo' />
         {auth.currentUser ? 
           <div className='flex'>
-            <button className="font-semibold rounded-md p-2 bg-red-700 text-white outline-none mx-5" onClick={handleClick}> {!showAiSearch ? "Ask AI" : "Home"} </button>
+            <button className="font-semibold rounded-md p-2 bg-red-700 text-white outline-none mx-5 text-sm sm:text-base" onClick={handleClick}> {!showAiSearch ? "Ask AI" : "Home"} </button>
             <div className='flex hover:cursor-pointer' onClick={handleLogOut}>
             <img className='w-9 h-9 flex' src={PROFILE} alt="users"/>
             <IoMdArrowDropdown className='mt-3 mx-1 text-white'/>

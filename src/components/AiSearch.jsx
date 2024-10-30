@@ -28,7 +28,7 @@ const AiSearch = () => {
   }
   
   return (
-    <div className='w-screen text-black h-auto p-0 m-0 overflow-x-hidden'>
+    <div className='max-w-screen text-black h-auto p-0 m-0 overflow-x-hidden'>
       <img className="w-screen h-screen min-h-screen min-w-screen object-cover fixed top-0 left-0 z-0" src={BG_IMG} alt='netflix-bg' />
       <form className='flex relative top-[40%] md:w-1/2 h-12 md:mx-[25%] w-full mx-0 z-10 mt-80 mb-20 overflow-x-hidden' onSubmit={(e)=> e.preventDefault()}>
         <input className="outline-none rounded-s-lg sm p-2 w-[80%] w-min-[90%]" type='text' ref={search} placeholder="Looking for a movie?"/>

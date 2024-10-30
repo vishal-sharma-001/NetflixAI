@@ -10,7 +10,7 @@ const CarouselContainer = () => {
 
   return (
     <div className=' bg-black h-auto'>
-      <div className='relative bottom-[500px] sm:bottom-[500px] md:[600px] lg:bottom-[300px] 2xl:bottom-[100px] md:top-[35%] left-0 z-20'>
+      <div className='relative left-0 md:bottom-60 z-10'>
         {nowPlayingMovies ? <MoviesList prop={nowPlayingMovies} title="Now Playing" /> : null}
         {popularMovies ? <MoviesList prop={popularMovies} title="Popular" /> : null}
         {topRatedMovies ? <MoviesList prop={topRatedMovies} title="Top Rated" /> : null}

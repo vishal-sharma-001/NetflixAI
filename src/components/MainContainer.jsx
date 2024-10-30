@@ -9,7 +9,7 @@ function MainContainer() {
 
   const movie = nowPlayingMovies[0]
   return (
-    <div className='w-screen h-screen'>
+    <div className='flex justify-between'>
       <MovieInfoContainer prop={movie}/>
       <MovieVideoContainer prop={movie.id}/>
     </div>

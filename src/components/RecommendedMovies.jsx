@@ -7,7 +7,7 @@ const RecommendedMovies = () => {
   if (recommendedMovies == null || recommendedMovies.length === 0)
       return null
   return (
-    <div className='flex flex-wrap bg-black rounded-3xl bg-opacity-60 mx-5 pt-10 max-w-screen h-auto z-10 relative justify-center'>
+    <div className='flex flex-wrap bg-black rounded-3xl bg-opacity-60 mx-2 p-5 w-auto h-auto z-10 relative justify-center overflow-x-hidden space-x-3 space-y-2'>
       {recommendedMovies.map((movie)=> {
         return movie ? <MoviesCards key={movie.id} prop={movie}/> : null})}
     </div>

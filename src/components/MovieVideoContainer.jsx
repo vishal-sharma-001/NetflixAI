@@ -7,7 +7,7 @@ const MovieVideoContainer = ({ prop }) => {
   const video = useSelector((store) => store.movies.trailerVideo)
   if (!video) return null;
   return (
-    <div className='relative top-[15%] md:-top-32'>
+    <div className='relative md:-top-32 z-10'>
       <iframe
         className="pointer-events-none w-screen aspect-video" // Ensures full screen coverage and no interaction
         title={video.title}
