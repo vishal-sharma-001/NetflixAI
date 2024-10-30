@@ -1,66 +1,44 @@
-Netflix AI
+# Netflix AI
 
-Create React App
-Configured TailwindCSS
-Header
-Routing of App
-Login Form
-Sign up Form
-Form Validation
-useRef Hook
-Firebase Setup
-Deploying our app to production
-Create SignUp User Account
-Implement Sign In user Api
-Created Redux Store with userSlice
-Implemented Sign out
-Update Profile
-BugFix: Sign up user displayName and profile picture update
-BugFix: if the user is not logged in Redirect /browse to Login Page and vice-versa
-Unsubscibed to the onAuthStateChanged callback
-Add hardcoded values to the constants file
-Regiter TMDB API & create an app & get access token
-Get Data from TMDB now playing movies list API
-Custom Hook for Now Playing Movies
-Create movieSlice
-Update Store with movies Data
-Planning for MainContauiner & secondary container
-Fetch Data for Trailer Video
-Update Store with Trailer Video Data
-Embedded the Yotube video and make it autoplay and mute
-Tailwind Classes to make Main Container look awesome
-Build Secondary Component
-Build Movie List
-build Movie Card
-TMDB Image CDN URL
-Made the Browsre page amazing with Tailwind CSS
-usePopularMovies Custom hook
-GPT Search Page
-GPT Search Bar
-Get Open AI Api Key
-Gpt Search API Call
-fetched gptMoviesSuggestions from TMDB
-created gptSlice added data
-Resused Movie List component to make movie suggestion container
-Memoization
-Added .env file
-Adding .env file to gitignore
-Made our Site Responsive
+A movie browsing platform powered by TMDB and Gemini for advanced movie suggestions. Built with React, TailwindCSS, Firebase, and Redux.
 
+## Features
 
+- **Login/Sign Up**: Secure authentication with Firebase.
+- **Browse Page**: After login, access a dynamic list of movies, including trailers, titles, and descriptions.
+- **Movie Trailers**: Autoplaying trailers with embedded YouTube videos.
+- **Movie Suggestions**: Intelligent movie recommendations using Gemini and TMDB API.
+- **NetflixGemini Search**: Integrated search bar with AI-powered movie suggestions.
+- **Responsive Design**: Optimized for mobile and desktop with TailwindCSS.
 
-Features
+## Project Structure
 
-Login/Sign Up
-Sign In /Sign up Form
-redirect to Browse Page
-Browse (after authentication)
-Header
-Main Movie
-Tailer in Background
-Title & Description
-MovieSuggestions
-MovieLists * N
-NetflixGPT
-Search Bar
-Movie Suggestions
+1. **Create React App**: Configured with TailwindCSS for UI styling.
+2. **Routing**: App routing for easy navigation between pages.
+3. **Forms**:
+   - Login Form
+   - Sign Up Form
+   - Form validation using `useRef` hook.
+4. **Firebase Setup**:
+   - Deployed to production.
+   - Sign up and login user account functionality.
+   - Sign out and profile update features.
+5. **State Management**:
+   - Created Redux store with `userSlice` for user authentication.
+   - `movieSlice` to store movie data.
+   - `aiSlice` for Gemini-powered movie suggestions.
+6. **API Integration**:
+   - TMDB API for fetching movies (now playing, popular).
+   - Gemini-powered movie suggestions.
+7. **Custom Hooks**:
+   - `usePopularMovies` for fetching popular movies.
+   - Custom hook for Now Playing movies.
+8. **Responsive UI**:
+   - TailwindCSS for a responsive, visually appealing UI.
+   - Main movie container with a beautiful layout and movie list components.
+9. **Environment Variables**:
+   - `.env` file for sensitive data like API keys.
+
+## Deployment
+
+- **Firebase Hosting**: Deployed to Firebase.
