@@ -6,12 +6,13 @@ import MovieVideoContainer from './MovieVideoContainer';
 function MainContainer() {
   const nowPlayingMovies = useSelector((store)=> store.movies.nowPlayingMovies)
   if (!nowPlayingMovies) return null
-
   const movie = nowPlayingMovies[0]
   return (
     <div className='flex justify-between'>
       <MovieInfoContainer prop={movie}/>
-      <MovieVideoContainer prop={movie.id}/>
+      <div className='relative md:-top-32 z-10'>
+        <MovieVideoContainer prop={movie.id} styleProp="pointer-events-none w-screen aspect-video"/>
+      </div>
     </div>
   )
 }

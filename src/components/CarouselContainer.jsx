@@ -9,8 +9,8 @@ const CarouselContainer = () => {
   const upcomingMovies = useSelector((store) => store.movies.upcomingMovies)
 
   return (
-    <div className=' bg-black h-auto'>
-      <div className='relative left-0 md:bottom-60 z-10'>
+    <div className=' bg-zinc-900 h-auto'>
+      <div className='relative left-0 md:bottom-64 z-10'>
         {nowPlayingMovies ? <MoviesList prop={nowPlayingMovies} title="Now Playing" /> : null}
         {popularMovies ? <MoviesList prop={popularMovies} title="Popular" /> : null}
         {topRatedMovies ? <MoviesList prop={topRatedMovies} title="Top Rated" /> : null}
