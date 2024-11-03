@@ -16,6 +16,7 @@ const Header = () => {
   }
 
   const handleLogOut = () => {
+    setShowUserMenu(false)
     signOut(auth).then(() => {
     }).catch((error) => {
         return error

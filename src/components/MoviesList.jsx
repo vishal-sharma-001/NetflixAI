@@ -5,7 +5,7 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'; // Importing the
 const MoviesList = ({ prop, title }) => {
     const [expandCardId, setExpandCardId] = useState(null);
     const scrollRef = useRef(null);
-    const scrollAmount = 300;
+    const scrollAmount = window.innerWidth * 0.7;
 
     const scrollLeft = () => scrollRef.current?.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
     const scrollRight = () => scrollRef.current?.scrollBy({ left: scrollAmount, behavior: 'smooth' });
