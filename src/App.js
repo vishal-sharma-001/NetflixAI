@@ -29,7 +29,7 @@ function App() {
   }, []) 
 
   return (
-    <div className="App">
+    <div className="App select-none">
       <Header/>
       <Outlet/>
     </div>

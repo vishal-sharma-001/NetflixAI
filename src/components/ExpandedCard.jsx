@@ -5,11 +5,11 @@ import MovieDetails from './MovieDetails';
 
 const ExpandedCard = ({ prop }) => {
     return ( 
-      <div className="flex flex-col w-[80%] h-[120%] rounded-sm shadow-lg cursor-pointer">
-        <div className="h-[70%] bg-slate-50 w-full rounded-sm overflow-hidden">
-          <MovieVideoContainer prop={prop.id} styleProp="pointer-events-none h-[140%] aspect-video relative right-32 bottom-16"/>
+      <div className="flex flex-col rounded-md shadow-lg cursor-pointer">
+        <div className=" bg-slate-50 w-full overflow-hidden h-[300px]">
+          <MovieVideoContainer prop={prop.id} styleProp="pointer-events-none aspect-video relative w-[150%] -top-14 -left-32"/>
         </div>
-        <div className='h-[30%] bg-zinc-900 w-full rounded-sm'>
+        <div className='bg-zinc-900 w-full absolute bottom-0 opacity-50 h-[100px]'>
           <MovieDetails prop={prop.id}/>
         </div>
       </div>

@@ -57,7 +57,7 @@ const Login = () => {
           
           <label className='text-white font-extrabold text-2xl flex'>{signUp ? "Sign Up" : "Sign In"}</label>
           {signUp ? <input className='my-5 rounded-md h-12 bg-zinc-900 bg-opacity-0 border-2 border-[rgb(58,57,55)]  text-white outline-none focus:border-white placeholder-gray-300 p-3' placeholder="Full Name" type="text" ref={fullname}/> : <></>}
-          <input className='my-5 rounded-md h-12 bg-zinc-900 bg-opacity-0 border-2 border-[rgb(58,57,55)]  text-white outline-none  focus:border-white placeholder-gray-300 p-3'  placeholder="Email or mobile number" type="text" ref={email} />
+          <input className='my-5 rounded-md h-12 bg-zinc-900 bg-opacity-0 border-2 border-[rgb(58,57,55)]  text-white outline-none  focus:border-white placeholder-gray-300 p-3'  placeholder="Email" type="text" ref={email} />
           <input className='my-5 rounded-md h-12 bg-zinc-900 bg-opacity-0 border-2 border-[rgb(58,57,55)]  text-white outline-none focus:border-white placeholder-gray-300   p-3' placeholder="Password" type='password' ref={password}/>
           <input className='my-5 h-12 rounded-md bg-[rgb(229,8,33)] text-white hover:bg-red-700' type='button' value={ signUp ?  "Sign Up" : "Sign In"} onClick={handleSubmit}/>
           <label className='text-slate-400'>OR</label>

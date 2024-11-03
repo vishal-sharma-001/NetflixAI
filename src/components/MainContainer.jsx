@@ -8,7 +8,7 @@ function MainContainer() {
   if (!nowPlayingMovies) return null
   const movie = nowPlayingMovies[0]
   return (
-    <div className='flex justify-between'>
+    <div className='flex justify-between min-h-40'>
       <MovieInfoContainer prop={movie}/>
       <div className='relative md:-top-32 z-10'>
         <MovieVideoContainer prop={movie.id} styleProp="pointer-events-none w-screen aspect-video"/>
