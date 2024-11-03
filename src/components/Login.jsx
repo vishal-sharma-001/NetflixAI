@@ -70,7 +70,7 @@ const Login = () => {
           </div>
 
           <label onClick={handleSignUp}  className=' text-white flex'>
-            { signUp ?  "Already registered? Sign in now." : "New to Netflix? Sign up now." }
+            { signUp ?  <p>Already registered? Sign in now.</p> : <p> New to Netflix? <span className='font-bold cursor-pointer'>Sign up now.</span> </p>}
           </label>
           {errorMsg == null ? <></> : <p className='text-red-600 flex my-3'>{errorMsg}</p>}
       </form>
